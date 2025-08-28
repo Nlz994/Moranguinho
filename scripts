@@ -1,0 +1,28 @@
+document.addEventListener('DOMContentLoaded', function () {
+    // 🍓 Botão principal da acessibilidade com estilo moranguinho
+    const botaoMoranguinho = document.getElementById('botao-acessibilidade');
+    const menuMoranguinho = document.getElementById('opcoes-acessibilidade');
+
+    botaoMoranguinho.addEventListener('click', function () {
+        botaoMoranguinho.classList.toggle('rotacao-botao'); // 🍓 Gira o botão como uma folhinha
+        menuMoranguinho.classList.toggle('apresenta-lista'); // 🍓 Mostra ou esconde o menu de opções
+    });
+
+    // 🍓 Botões para ajustar o tamanho da fonte
+    const botaoAumentarMorango = document.getElementById('aumentar-fonte');
+    const botaoDiminuirMorango = document.getElementById('diminuir-fonte');
+
+    let tamanhoFonteMorango = 1;
+
+    botaoAumentarMorango.addEventListener('click', function () {
+        tamanhoFonteMorango += 0.1;
+        document.body.style.fontSize = `${tamanhoFonteMorango}rem`;
+        document.body.style.transition = 'font-size 0.3s ease'; // 🍓 Suavidade ao crescer
+    });
+
+    botaoDiminuirMorango.addEventListener('click', function () {
+        tamanhoFonteMorango = Math.max(0.5, tamanhoFonteMorango - 0.1); // 🍓 Limite mínimo para não sumir
+        document.body.style.fontSize = `${tamanhoFonteMorango}rem`;
+        document.body.style.transition = 'font-size 0.3s ease'; // 🍓 Suavidade ao diminuir
+    });
+});
