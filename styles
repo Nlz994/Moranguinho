@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+:root {
+    --morango-claro: #FF5E78;
+    --morango-escuro: #C2185B;
+    --folha-verde: #A5D6A7;
+    --creme-fundo: #FFF0F5;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--creme-fundo);
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 5px dotted var(--morango-claro);
+}
+
+section {
+    padding-bottom: 5rem;
+}
+
+.nav-link {
+    color: var(--morango-escuro);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.nav-link:hover {
+    color: var(--folha-verde);
+}
+
+.inicio-fundo {
+    background-image: url('img/moranguinho-fundo.jpg'); /* imagem temática */
+    background-size: cover;
+    background-position: center;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
+
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.botao-inicio {
+    background-color: var(--morango-claro);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.display-4 {
+    text-shadow: -5px 5px var(--morango-claro);
+}
+
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/morango-direita.png') top right no-repeat,
+                url('img/morango-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--morango-escuro);
+}
+
+#galeria {
+    background-color: var(--creme-fundo);
+}
+
+.fundo-galeria {
+    background: url('img/morango-bottom.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: url('img/moranguinho-fundo.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 94, 120, 0.3);
+    font-weight: bold;
+}
+
+.formulario button {
+    background-color: var(--morango-escuro);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.form-control {
+    background-color: #FFE4EC;
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+    background-color: var(--folha-verde);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    color: #333;
+}
+
+.apresenta-lista {
+    display: none;
+}
